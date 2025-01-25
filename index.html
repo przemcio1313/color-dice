@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Dice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="settings">
+        <select class="dice-select" id="diceCount" onchange="handleDiceCountChange()">
+            <option value="1">1 dice</option>
+            <option value="2">2 dice</option>
+            <option value="3">3 dice</option>
+            <option value="4">4 dice</option>
+            <option value="5">5 dice</option>
+            <option value="6">6 dice</option>
+        </select>
+    </div>
+
+    <div class="dice-container" id="diceContainer"></div>
+    <button class="roll-button" onclick="rollDice()">
+        <span class="roll-text">ROLL AGAIN !</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
